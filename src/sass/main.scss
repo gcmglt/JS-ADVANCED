@@ -1,0 +1,83 @@
+@import "config";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin-top: 20px;
+  background-color: $tertiary-color;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  text-align: center;
+}
+
+header {
+  height: 50vh;
+  background-image: url(../img/bg.jpg);
+  background-position: 50% 50%;
+  object-fit: fill;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.search-wrapper__title {
+  margin-bottom: 50px;
+  color: $primary-color;
+  background-color: $tertiary-color;
+}
+
+.score-container__overall,
+.city-input__description,
+.score-container__categories {
+  color: $primary-color;
+  margin: 10px 30px;
+}
+
+.score-container__categories {
+  text-transform: uppercase;
+}
+
+.card-transparent {
+  background-color: transparent;
+  border: none;
+}
+
+.card-visible {
+  background-color: transparent;
+  border: 2px solid $primary-color;
+  border-radius: 15px;
+  margin: 10px 0;
+}
+
+.result-container__guideline {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.result-container__error {
+  text-align: center;
+  color: red;
+  font-weight: 700;
+}
+
+.city-input__name {
+  height: 3rem;
+  width: 25rem;
+  font-size: 1.2rem;
+  padding: 0 1.2rem;
+  border: 2px solid $primary-color;
+  border-radius: 1rem;
+  color: $primary-color;
+  background-color: $tertiary-color;
+  box-shadow: 0px 0px 10px 10px #fff;
+}
+
+.city-input__name:focus {
+  outline: none;
+  border-color: $secondary-color;
+  color: $secondary-color;
+}
+
+@import "button";
+@import "media";
